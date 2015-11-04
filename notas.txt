@@ -1,0 +1,16 @@
+﻿El volcado de la base de datos se encuentra en el archivo dump.sql.
+Nombre de la base de datos: travel
+Ordenación/collate: utf8_unicode_ci
+Codificación: utf-8
+
+Para el correcto soporte multilingüe será necesario que todas las configuraciones de codificación, conexión, etc., tanto el servidor de base de datos como PHP, estén en UTF-8.
+
+Usamos generador de lorem ipsum asíaticos en http://generator.lorem-ipsum.info/
+
+Se incluye un pequeño diagrama de clases en UML generado con el plugin PlantUML para Netbeans (el IDE que hemos utilizado).
+
+Se han incluído los ficheros "skeleton" para tests con PHPUnit (de nuevo, con las opciones integradas en Netbeans para usar este paquete) pero no hemos llegado a implementar tests propios.
+
+Es necesario configurar el archivo include/config.php con los valores correctos para la conexión a la base de datos.
+
+El archivo con el script a ejecutar es script.php. Se incluye otro archivo, scriptNonInt.php, que puede resultar útil si se quiere ejecutar llamándolo desde un navegador (útil para testeo de búsquedas con textos multibyte en entornos/sistemas operativos "problemáticos" con UTF-8.

@@ -1,0 +1,20 @@
+@startuml
+
+class Search {
+	+results:Array
+	+stablishmentTypeList:Array
+	+textToSearch:String
+	+getConcreteStsTableNames()
+	-completeInfoForHotel()
+	-completeInfoForApart()
+	+perform()
+}
+
+class SearchEngine {
+	{static}+perfomSearch()
+}
+SearchEngine -- Search
+
+
+
+@enduml
